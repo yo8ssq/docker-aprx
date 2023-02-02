@@ -1,0 +1,12 @@
+version: "3.2"
+
+services:
+
+  aprx:
+    image: marrold/docker-aprx:latest
+    container_name: aprx
+    restart: unless-stopped
+    devices:
+      - /dev/ttyACM0
+    volumes:
+      - ./aprx.conf:/etc/aprx.conf
