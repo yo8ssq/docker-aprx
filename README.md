@@ -9,10 +9,10 @@ images: [Docker Hub](https://hub.docker.com/repository/docker/marrold/docker-apr
 
 Currently images exist for the following architectures. If you want to see support for another platform please open an issue.
 - AMD64
- - ARM7
+- ARM7
 
 ## Running the container
-It's assumed you're using docker-compose to run the container. Remember to supply the serial interface connected to your KISS TNC and mount a valid `aprx.conf` to `/etc/aprx.conf`
+It's assumed you're using docker-compose to run the container. Remember to supply the serial interface connected to your KISS TNC and mount a valid `aprx.conf` to `/etc/aprx.conf`. See the aprx documentation for further information on setting up `aprx.conf`
 
     version: "3.2"
     services:
